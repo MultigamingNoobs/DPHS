@@ -1,5 +1,5 @@
 # DayZ Bliss Hive Stats #
-DEMO: http://www.my-mgn.de/DHBS
+DEMO: http://www.my-mgn.de/DBHS
 
 ## deutsch ##
 Installation:
