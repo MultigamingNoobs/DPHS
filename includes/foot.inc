@@ -1,7 +1,7 @@
 	<div align="left" id="foot">
 		<table width="100%" align="center">
 			<tr>
-				<td class="nav1"><p style="font-size:11px"><abbr title="DayZ Bliss Hive Stats Version <? echo $ver; ?>">DBHS v<? echo $ver; ?></abbr> by Kater @ 2013</p></td>
+				<td class="nav1"><p style="font-size:11px"><a href="https://github.com/Kater1981/DBHS" title="DayZ Bliss Hive Stats Version <?= $ver; ?>" target="_blank">DBHS v<?= $ver; ?></a> by <a href="http://www.the-weird.de/" target="_blank">Kater</a> @ 2013</p></td>
 			</tr>
 		</table>
 	</div>

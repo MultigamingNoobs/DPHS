@@ -24,19 +24,19 @@
 	<form enctype="multipart/form-data" method="post" action="instexec.php">
 	<table align="center">
 	<tr>
-		<td><p align="right">Websitetitle:</p></td><td><p align="left"><input type="text" name="title" value="<?= $webname; ?>"></p></td>
+		<td><p align="right">Websitetitle:</p></td><td><p align="left"><input type="text" name="title" value="DBHS"></p></td>
 	</tr><tr>
 		<td><p align="right">Websitebanner:</p></td><td><p align="left"><input type="file" name="banner"></p></td>
 	</tr><tr>
 		<td><p align="right">Sprache:</p></td><td><p align="left"><input type="radio" name="lang" value="de" checked>german<br /><input type="radio" name="lang" value="en">english<br /><input type="radio" name="lang" value="own">own languagetemplate</p></td>
 	</tr><tr>
-		<td><p align="right">MySQL Hostname:</p></td><td><p align="left"><input type="text" name="host" value="<?= $host; ?>"></p></td>
+		<td><p align="right">MySQL Hostname:</p></td><td><p align="left"><input type="text" name="host" value="localhost"></p></td>
 	</tr><tr>	
-		<td><p align="right">MySQL Database:</p></td><td><p align="left"><input type="text" name="db" value="<?= $db; ?>"></p></td>
+		<td><p align="right">MySQL Database:</p></td><td><p align="left"><input type="text" name="db" value="chernarus_1"></p></td>
 	</tr><tr>	
-		<td><p align="right">MySQL Username:</p></td><td><p align="left"><input type="text" name="user" value="<?= $user; ?>"></p></td>
+		<td><p align="right">MySQL Username:</p></td><td><p align="left"><input type="text" name="user" value="root"></p></td>
 	</tr><tr>	
-		<td><p align="right">MySQL Userpassword:</p></td><td><p align="left"><input type="password" name="pass" value="<?= $pass; ?>"></p></td>
+		<td><p align="right">MySQL Userpassword:</p></td><td><p align="left"><input type="password" name="pass" value="password123"></p></td>
 	</tr>
 	</table>
 	<input type="submit" name="" value="create config.php">
