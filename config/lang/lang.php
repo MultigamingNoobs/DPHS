@@ -1,4 +1,4 @@
-<?
+<?php
 	if ($lang == de) {
 		$name = "Name";
 		$humanity = "Menschlichkeit";
