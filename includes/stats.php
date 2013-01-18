@@ -31,7 +31,7 @@
 		$stat_bkills = $row['bandit_kills'];
 		$stat_tbkills = $row['bandit_kills'] + $row['total_bandit_kills'];
 		$stat_zkills = $row['zombie_kills'];
-		$stat_tzkills = $row['zombie_kills'] + $row['total_bandit_kills'];
+		$stat_tzkills = $row['zombie_kills'] + $row['total_zombie_kills'];
 		$stat_hs = $row['headshots'];
 		$stat_ths = $row['headshots'] + $row['total_headshots'];
 
