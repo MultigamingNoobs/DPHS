@@ -2,14 +2,17 @@
 DEMO: http://www.my-mgn.de/DBHS
 
 ## deutsch ##
-Installation:
-Lade alle Dateien auf deinen Webspace hoch, rufe die Stats in deinem Browser (z.B. http://www.deinedomain.de/DBHS/) auf und fülle alle Felder aus.
-Prüft noch ob die Datei "includes/install.php" Installtion gelöscht wurde, wenn nicht lösch diese manuell.
+### Installation:###
+Lade alle Dateien auf deinen Webspace hoch, rufe die Stats in deinem Browser (z.B. http://www.deinedomain.de/DBHS/) auf und fülle alle Felder aus.<br>
+Prüft noch ob die Datei "includes/install.php" Installtion gelöscht wurde, wenn nicht lösch diese manuell.<br>
+Es kann vorkommen, dass das Verzeichnis "images" und die Dateien "includes/config.php" und "includes/install.php" manuell auf die CHMOD/Dateiberechtigung 777 gesetzt werden müssen.<br>
+
 FERTIG
 
-Update:
-Lade alle Dateien auf deinen Webspace hoch, ausser den Dateien "includes/config.php" und "includes/install.php".
+###Update:###
+Lade alle Dateien auf deinen Webspace hoch, ausser den Dateien "includes/config.php" und "includes/install.php".<br>
 FERTIG
+<br><br>
 
 ### Version 1.5 ###
 + größere Anderüngen am Aufbau und der Struktur des Skripts (speziellen Dank an Crosire)
@@ -33,14 +36,16 @@ FERTIG
 ---------------------------------------
 
 ## english ##
-Installation:
-Place all files on your Webspace, open the stats in your Browser (ex. http://www.yourdomain.com/DBHS/) and fill in all fields.
-Check if the file "includes/install.php" is deleted, if not delete it manually.
+###Installation:###
+Place all files on your Webspace, open the stats in your Browser (ex. http://www.yourdomain.com/DBHS/) and fill in all fields.<br>
+Check if the file "includes/install.php" is deleted, if not delete it manually.<br>
+It could happen that the folder "images" and the files "includes/config.php" and "includes/install.php" must be set to CHMOD/permission 777 manually.<br>
 DONE
 
-Update:
-Place all files on your Webspace with the exception of the files "includes/config.php" and "includes/install.php".
+###Update:###
+Place all files on your Webspace with the exception of the files "includes/config.php" and "includes/install.php".<br>
 DONE
+<br><br>
 
 ### Version 1.5 ###
 + major changes to the sturcture and build of the script (special thanks to Crosire)
