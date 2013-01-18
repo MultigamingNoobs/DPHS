@@ -10,6 +10,7 @@ Es kann vorkommen, dass das Verzeichnis "images" und die Dateien "includes/confi
 FERTIG
 
 ###Update:###
+Alle Versionen vor 1.5: Die alte Version löschen und 1.5 Neuinstallieren.<br>
 Lade alle Dateien auf deinen Webspace hoch, ausser den Dateien "includes/config.php" und "includes/install.php".<br>
 FERTIG
 <br><br>
@@ -43,6 +44,7 @@ It could happen that the folder "images" and the files "includes/config.php" and
 DONE
 
 ###Update:###
+All Versions before 1.5: Delete old Version and do a fresh 1.5 install.<br>
 Place all files on your Webspace with the exception of the files "includes/config.php" and "includes/install.php".<br>
 DONE
 <br><br>
