@@ -1,8 +1,5 @@
 <?php
 	if (isset($_POST["submitbutton"])) {
-		chmod("images", 0777);
-		chmod("includes", 0777);
-		chmod("includes/config.php", 0777);
 		$dateiname = "includes/config.php";
 		$webname = $_POST["title"];
 		if($_FILES["banner"]["size"] <= 0) {
@@ -37,9 +34,6 @@
 		');		
 		fWrite($file, '?>');
 		fClose($file);
-		chmod("images", 0710);
-		chmod("includes", 0710);
-		chmod("includes/config.php", 0740);
 		echo 'created config.php<head><META HTTP-EQUIV=Refresh CONTENT="2; URL='.$_SERVER['PHP_SELF'].'"></head>';
 		unlink("includes/install.php");
 	} 
