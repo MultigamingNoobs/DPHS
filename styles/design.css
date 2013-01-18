@@ -26,32 +26,24 @@ img {
 
 a:link {
 	text-decoration: none;
-	color:White;
+	color:black;
 	background-color: transparent;
 }
 
 a:visited {
 	text-decoration: none;
-	color:White;
+	color:black;
 	background-color: transparent;
 }
 
 a:active {
 	text-decoration: none;
-	color:White;
+	color:black;
 	background-color: transparent;
 }
 
 a:hover {
-	text-decoration: none;
-	color:Black;
-	background-color:White;
-}
-#iframe_uc
-{
-background-color:Silver;
-   margin: 0;
-   border: none;
-   height: 1em;
-   width: 1em;
+	text-decoration: bold;
+	color:black;
+	background-color:transparent;
 }

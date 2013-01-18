@@ -102,14 +102,3 @@
 	color: Gray;
 	text-decoration: line-through;
 }
-
-.newstitle {
-	font-weight:bold;
-}
-.newstime {
-	font-family: Arial, Helvectica, serif;
-	text-align:right;
-	background-color:Silver;
-	color:Black;
-	font-size: small;
-}

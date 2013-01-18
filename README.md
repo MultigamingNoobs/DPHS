@@ -3,14 +3,17 @@ DEMO: http://www.my-mgn.de/DBHS
 
 ## deutsch ##
 Installation:
-Lade alle Dateien auf deinen Webspace hoch und setze CHMOD/Berechtigung 777 bei den Ordnern "images" und "config" (nur für die Installation benötigt). Öffne "DOMAIN/config/install.php" in deinem Browser und fülle alle Felder aus.
-Nun könnt ihr die CHMOD/Berechtigung wieder auf die vorherigen Einstellungen ändern. Prüft noch ob die Dateien "install.php" und "instexec.php" im "config" Verzeichnis nach der installtion gelöscht wurden, wenn nicht löscht diese manuell.
+Lade alle Dateien auf deinen Webspace hoch, rufe die Stats in deinem Browser (z.B. http://www.deinedomain.de/DBHS/) auf und fülle alle Felder aus.
+Prüft noch ob die Datei "includes/install.php" Installtion gelöscht wurde, wenn nicht lösch diese manuell.
 FERTIG
 
 Update:
-Lade alle Dateien auf deinen Webspace hoch, ausser dem "config" Verzeichniss.
+Lade alle Dateien auf deinen Webspace hoch, ausser den Dateien "includes/config.php" und "includes/install.php".
 FERTIG
 
+### Version 1.5 ###
++ größere Anderüngen am Aufbau und der Struktur des Skripts (speziellen Dank an Crosire)
++ installation überarbeitet
 
 ### Version 1.0a ###
 + kleinere korrekturen
@@ -31,14 +34,17 @@ FERTIG
 
 ## english ##
 Installation:
-Place all files on your Webspace and set CHMOD/permissions 777 for the folders "images" and "config" (just needed for the installation). Open "DOMAIN/config/install.php" in your Browser and fill in all fields.
-Now you can change CHMOD/permissions back the previous settings. Check if the files "install.php" and "instexec.php" in the "config" folder are deleted, if not delete them manually.
+Place all files on your Webspace, open the stats in your Browser (ex. http://www.yourdomain.com/DBHS/) and fill in all fields.
+Check if the file "includes/install.php" is deleted, if not delete it manually.
 DONE
 
 Update:
-Place all files on your Webspace with the exception of the "config" folder.
+Place all files on your Webspace with the exception of the files "includes/config.php" and "includes/install.php".
 DONE
 
+### Version 1.5 ###
++ major changes to the sturcture and build of the script (special thanks to Crosire)
++ installation changed
 
 ### Version 1.0a ###
 + minor fixes
