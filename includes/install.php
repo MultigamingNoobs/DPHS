@@ -18,6 +18,8 @@
 		$file = fOpen($dateiname, "w+");
 		fWrite($file, '<?php
 		');
+		fwrite($file, "  if(!defined('indexloaded')){die('Direct access not premitted');}
+	");
 		fWrite($file, '	$webname = "'.$webname.'";
 		');	
 		fWrite($file, '	$titlebanner = "'.$titlebanner.'";

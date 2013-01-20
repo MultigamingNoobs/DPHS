@@ -5,7 +5,7 @@ DEMO: http://www.my-mgn.de/DBHS
 ### Installation:###
 Lade alle Dateien auf deinen Webspace hoch, rufe die Stats in deinem Browser (z.B. http://www.deinedomain.de/DBHS/) auf und fülle alle Felder aus.<br>
 Prüft noch ob die Datei "includes/install.php" Installtion gelöscht wurde, wenn nicht lösch diese manuell.<br>
-Es kann vorkommen, dass das Verzeichnis "images" und die Dateien "includes/config.php" und "includes/install.php" manuell auf die CHMOD/Dateiberechtigung 777 gesetzt werden müssen.<br>
+Es kann vorkommen, dass das Verzeichnis "images" und "includes" und die Dateien "includes/config.php" und "includes/install.php" manuell auf die CHMOD/Dateiberechtigung 777 gesetzt werden müssen.<br>
 
 FERTIG
 
@@ -40,7 +40,7 @@ FERTIG
 ###Installation:###
 Place all files on your Webspace, open the stats in your Browser (ex. http://www.yourdomain.com/DBHS/) and fill in all fields.<br>
 Check if the file "includes/install.php" is deleted, if not delete it manually.<br>
-It could happen that the folder "images" and the files "includes/config.php" and "includes/install.php" must be set to CHMOD/permission 777 manually.<br>
+It could happen that the folder "images" and "includes" and the files "includes/config.php" and "includes/install.php" must be set to CHMOD/permission 777 manually.<br>
 DONE
 
 ###Update:###

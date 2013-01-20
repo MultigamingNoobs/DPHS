@@ -19,6 +19,7 @@
 		$dy2_lng = "e";
 		$hr_lng = "Std";
 		$mnt_lng = "Min";
+		$lgnd_lng = "Legende";
 	}
 	elseif ($lang == en) {
 		$name_lng = "Name";
@@ -40,6 +41,7 @@
 		$dy2_lng = "s";
 		$hr_lng = "hrs";
 		$mnt_lng = "min";
+		$lgnd_lng = "Legend";
 	}
 	elseif ($lang == own) {
 		$name_lng = "Name";
@@ -61,6 +63,7 @@
 		$dy2_lng = "s";
 		$hr_lng = "hrs";
 		$mnt_lng = "min";
+		$lgnd_lng = "Legend";
 	}
 	else {
 		$name_lng = "Name";
@@ -82,5 +85,6 @@
 		$dy2_lng = "e";
 		$hr_lng = "Std";
 		$mnt_lng = "Min";
+		$lgnd_lng = "Legende";
 	}
 ?>

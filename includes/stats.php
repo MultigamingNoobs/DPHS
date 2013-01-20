@@ -36,11 +36,11 @@
 		$stat_ths = $row['headshots'] + $row['total_headshots'];
 
 		if ($row['humanity'] >= 5000) {
-			$stat_humanity .= "<img src='images/hero.png' title='Hero' alt='Hero' />";
+			$stat_humanity .= '<img src="images/hero.png" title="'.$hero_lng.'" alt="'.$hero_lng.'" />';
 		} elseif ($row['humanity'] < 0) {
-			$stat_humanity .= "<img src='images/bandit.png' title='Bandit' alt='Bandit' />";
+			$stat_humanity .= '<img src="images/bandit.png" title="'.$bandit_lng.'" alt="'.$bandit_lng.'" />';
 		} else {
-			$stat_humanity .= "<img src='images/neutral.png' title='' alt='' />";
+			$stat_humanity .= '<img src="images/neutral.png" title="" alt="" />';
 		}
 
 		echo '
@@ -60,6 +60,18 @@
 		$nr++;
 	}
 	echo '</table>';
-	
+		
 	mysql_close($verbindung);
+	
+	echo '<div align="left" id="navl">
+			<table>
+				<tr>
+					<td class="tr_1" colspan="2">'.$lgnd_lng.'</td>
+				</tr><tr>
+					<td class="tr_3" style="text-align:left;">'.$bandit_lng.':</td><td class="tr_3"><img src="images/bandit.png" title="'.$bandit_lng.'" alt="'.$bandit_lng.'" /></td>
+				</tr><tr>
+					<td class="tr_2" style="text-align:left;">'.$hero_lng.':</td><td class="tr_2"><img src="images/hero.png" title="'.$hero_lng.'" alt="'.$hero_lng.'" /></td>
+				</tr>
+			</table>
+		</div>';
 ?>

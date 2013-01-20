@@ -1,4 +1,5 @@
 <?php
+	if(!defined('indexloaded')){die('Direct access not premitted');}
 	$host = "localhost";					// MySQL Hostname
 	$db = "chernarus_1";					// MySQL Databasename
 	$user = "root";							// MySQL Username
