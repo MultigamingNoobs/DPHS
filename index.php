@@ -5,7 +5,7 @@
 		include "includes/install.php"; 
 	}
 	else {
-		include "includes/stats.php"; 
+		include 'includes/stats.php';
 	}
-	include "includes/foot.html";
+	include "includes/footer.html";
 ?>

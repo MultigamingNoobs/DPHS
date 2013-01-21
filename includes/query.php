@@ -1,5 +1,5 @@
 <?php
-if(!defined('indexloaded')){die('Direct access not premitted');}
+if(!defined('indexloaded')){die('Direct access not premitted');} 
 $verbindung = mysql_connect($host, $user, $pass) or die (mysql_error());
 mysql_select_db($db) or die (mysql_error());
 
@@ -13,10 +13,12 @@ if (isset($_GET["order"])) {
 	if ($_GET["order"] == "asc"){
 		$sort = "desc";
 		$order = "asc";
+		$order_lng = $lang['ASC'];
 	}
 	else{
 		$sort = "asc";
 		$order = "desc";
+		$order_lng = $lang['DESC'];
 	}
 }
 
@@ -71,6 +73,10 @@ switch($type){
 		break;
 	default:
 		$query .= " name asc";	
+}
+if (isset($_GET["srch"])) {
+	$srch_var = $_GET["srch"];
+	$query = "SELECT * FROM profile p INNER JOIN survivor s ON p.unique_ID = s.unique_ID WHERE is_dead = '0' and name = '".$srch_var."' order by name asc";
 }
 
 $stats = mysql_query($query);

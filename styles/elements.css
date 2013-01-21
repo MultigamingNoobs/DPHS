@@ -1,23 +1,43 @@
 #head {
-	position:fixed;
+	text-align: center;
+	position:fixed;	
+	border: 0;
+	right:0px;
+	left:0px;
 	top: 0px;
-	left: 42px;
 	padding: 0px;
 	font-size: small;
 	background-color:Black;
+	z-index: 1;
 }
 
 #foot {
 	font-family: Arial, Helvectica, serif;
 	position:fixed;
+	border: 0;
 	bottom: 0px;
-	right:5px;
-	left:5px;
+	right:0px;
+	left:0px;
 	padding: 0px;
 	font-size: small;
-	background-color:Black;
+	background-color:silver;	
+	z-index: 2;
 }
 
+#lgnd {
+	position:fixed;
+	top: 180px;
+	right: 90px;
+	padding:1px;
+	font-size: small;
+}
+#srch {
+	position:fixed;
+	top: 90px;
+	right: 10px;
+	padding: 1px;
+	font-size: small;
+}
 #navt {
 	position:fixed;
 	top:60px;
@@ -27,19 +47,11 @@
 	font-size: small;
 	background-color:Black;
 }
-
 #navl {
 	position:fixed;
 	top: 150px;
 	left: 42px;
 	padding:1px;
-	font-size: small;
-}
-#navr {
-	position:fixed;
-	top: 150px;
-	right: 42px;
-	padding: 0px;
 	font-size: small;
 }
 
@@ -51,6 +63,7 @@
 	background-color:Silver;
 	color:Black;
 	font-weight:bold;
+	opacity: 0.7;
 }
 .tr_2 {
 	font-family: Arial, Helvectica, serif;
@@ -58,6 +71,7 @@
 	font-size: medium;
 	background-color:Black;
 	color: #d2d2d2;
+	opacity: 0.7;
 }
 .tr_3 {
 	font-family: Arial, Helvectica, serif;
@@ -65,6 +79,7 @@
 	font-size: medium;
 	background-color: #2f2f2f;
 	color: #d2d2d2;
+	opacity: 0.7;
 }
 .sort {
 	font-family: Arial, Helvectica, serif;

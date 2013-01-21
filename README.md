@@ -10,10 +10,14 @@ Es kann vorkommen, dass das Verzeichnis "images" und "includes" und die Dateien 
 FERTIG
 
 ###Update:###
-Alle Versionen vor 1.5: Die alte Version löschen und 1.5 Neuinstallieren.<br>
-Lade alle Dateien auf deinen Webspace hoch, ausser den Dateien "includes/config.php" und "includes/install.php".<br>
-FERTIG
+Alle Versionen vor 2.0: Die alte Version löschen und 2.0 Neuinstallieren.<br>
 <br><br>
+
+### Version 2.0 ###
++ Suchfunktion
++ Serverinformationen im header
++ Sprachsystem optimiert
++ Hintergrundbild
 
 ### Version 1.5 ###
 + größere Anderüngen am Aufbau und der Struktur des Skripts (speziellen Dank an Crosire)
@@ -28,11 +32,12 @@ FERTIG
 + Unterstützung für mehrere Sprachen
 
 ### kommende Funktionen ###
+* Optionsseite
 * automatisches aktualisieren für Livestatistiken
 * auslesen von Spielerinfos aus der squad.xml (http://community.bistudio.com/wiki/squad.xml), wenn diese benutzt wird
 * Waffen- und Toolbeltiteminfos von Spielern
 * Themes / eigene Farben
-* Suchfunktion
+
 
 ---------------------------------------
 
@@ -44,10 +49,14 @@ It could happen that the folder "images" and "includes" and the files "includes/
 DONE
 
 ###Update:###
-All Versions before 1.5: Delete old Version and do a fresh 1.5 install.<br>
-Place all files on your Webspace with the exception of the files "includes/config.php" and "includes/install.php".<br>
-DONE
+All Versions before 2.0: Delete old Version and do a fresh 2.0 install.<br>
 <br><br>
+
+### Version 2.0 ###
++ Searchfunction
++ Serverinfos in header
++ optimisation of language system
++ backgroundimage
 
 ### Version 1.5 ###
 + major changes to the sturcture and build of the script (special thanks to Crosire)
@@ -62,8 +71,8 @@ DONE
 + multiple language support
 
 ### upcoming features ###
+* Optionspage
 * automatic refresh for livestatistics
 * taking infos on player from squad.xml (http://community.bistudio.com/wiki/squad.xml) if used
 * weapon and toolbeltitem info on players
 * themes / own coloration
-* searchfunction
