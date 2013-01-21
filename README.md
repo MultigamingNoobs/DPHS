@@ -14,7 +14,7 @@ Alle Versionen vor 2.0: Die alte Version löschen und 2.0 Neuinstallieren.<br>
 <br><br>
 
 ### Version 2.0 ###
-+ Suchfunktion
++ Suchfunktion (inkl. Wildcardsuche)
 + Serverinformationen im header
 + Sprachsystem optimiert
 + Hintergrundbild
@@ -53,7 +53,7 @@ All Versions before 2.0: Delete old Version and do a fresh 2.0 install.<br>
 <br><br>
 
 ### Version 2.0 ###
-+ Searchfunction
++ Searchfunction (incl. Wildcardsearch)
 + Serverinfos in header
 + optimisation of language system
 + backgroundimage
