@@ -75,8 +75,8 @@ switch($type){
 		$query .= " name asc";	
 }
 if (isset($_GET["srch"])) {
-	$srch_var = $_GET["srch"];
-	$query = "SELECT * FROM profile p INNER JOIN survivor s ON p.unique_ID = s.unique_ID WHERE is_dead = '0' and name = '".$srch_var."' order by name asc";
+	$srch_var = str_replace('*', '%', $_GET["srch"]);
+	$query = "SELECT * FROM profile p INNER JOIN survivor s ON p.unique_ID = s.unique_ID WHERE is_dead = '0' and name LIKE '".$srch_var."' order by name asc";
 }
 
 $stats = mysql_query($query);
