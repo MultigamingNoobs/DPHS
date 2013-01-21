@@ -62,7 +62,7 @@
 	}
 	else { echo '<td colspan="10" class="tr_3">'.$lang['SEARCH_ERROR'].'</td>'; }
 	echo '</table>';
-	if (isset($_GET['srch'])) { echo '<br /><a href="." target="_self"><font color="white"><b><--'.$lang['SEARCH_BACK'].'</b></font></a>'; }
+	if (isset($_GET['srch'])) { echo '<br /><a href="." target="_self"><b><--'.$lang['SEARCH_BACK'].'</b></a>'; }
 		
 	mysql_close($verbindung);
 	
