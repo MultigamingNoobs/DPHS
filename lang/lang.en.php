@@ -2,7 +2,7 @@
 //--------------------------------------
 // Language: English
 // (C) 2013 Kater1981 & kurim
-// rev 2
+// rev 3
 //--------------------------------------
 $lang = array();
 $lang['NAME']				= "Name";
@@ -28,4 +28,5 @@ $lang['LGNG']				= "Legend";
 $lang['SEARCH']				= "Search";
 $lang['SEARCH_ERROR']		= "No results";
 $lang['SEARCH_BACK']		= "Back";
+$lang['ORDER']              = "Order";
 ?>
