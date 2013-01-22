@@ -1,4 +1,5 @@
 <?php
+echo '<div id="install">';
 	if (isset($_POST["submitbutton"])) {
 		$dateiname = "includes/config.php";
 		$webname = $_POST["title"];
@@ -10,45 +11,37 @@
 			move_uploaded_file($_FILES["banner"]["tmp_name"], "../images/".$_FILES["banner"]["name"]);
 			$titlebanner = $_FILES["banner"]["name"];
 		}
-		$svrname = $_POST["svrname"]; 
-		$svrip = $_POST["svrip"]; 
-		$svrport = $_POST["svrport"]; 
-		$langsel = $_POST["lang"]; 
-		$host = $_POST["host"]; 
-		$db = $_POST["db"]; 
-		$user = $_POST["user"]; 
-		$pass = $_POST["pass"]; 
-		$file = fOpen($dateiname, "w+");
-		fWrite($file, '<?php
-		');
-		fwrite($file, "  if(!defined('indexloaded')){die('Direct access not premitted');}
-	");
-		fWrite($file, '	$webname = "'.$webname.'";
-		');	
-		fWrite($file, '	$titlebanner = "'.$titlebanner.'";
-		');		
-		fWrite($file, '	$svr_name = "'.$svrname.'";
-		');		
-		fWrite($file, '	$svr_ip = "'.$svrip.'";
-		');		
-		fWrite($file, '	$svr_port = "'.$svrport.'";
-		');				
-		fWrite($file, ' $langselect = '.$langsel.'";
-		');		
-		fWrite($file, '	$host = "'.$host.'";
-		');		
-		fWrite($file, '	$db = "'.$db.'";
-		');		
-		fWrite($file, '	$user = "'.$user.'";
-		');		
-		fWrite($file, '	$pass = "'.$pass.'";
-		');		
-		fWrite($file, '?>');
-		fClose($file);
-		echo 'created config.php<head><META HTTP-EQUIV=Refresh CONTENT="2; URL='.$_SERVER['PHP_SELF'].'"></head>';
+		$fp = fopen("includes/config.sample.php","r");
+		if ($fp){ 
+			$file = array();
+			while(!feof($fp))
+			{  $zeile = fgets($fp,100);
+			   $file[] = $zeile;  } 
+		fclose($fp); 
+		} 
+		else 
+		{ 
+		echo "Datei wurde nicht gefunden";
+		}
+		$file[2] = str_replace('DBHS', $webname, $file[2]);
+		$file[3] = str_replace('title_banner.png', $titlebanner, $file[3]);
+		$file[4] = str_replace('""', '"'.$_POST["svrname"].'"', $file[4]);
+		$file[5] = str_replace('""', '"'.$_POST["svrip"].'"', $file[5]);
+		$file[6] = str_replace('""', '"'.$_POST["svrport"].'"', $file[6]);
+		$file[7] = str_replace('""', '"'.$_POST["host"].'"', $file[7]);
+		$file[8] = str_replace('""', '"'.$_POST["db"].'"', $file[8]);
+		$file[9] = str_replace('""', '"'.$_POST["user"].'"', $file[9]);
+		$file[10] = str_replace('""', '"'.$_POST["pass"].'"', $file[10]);
+		$file[11] = str_replace('""', '"'.$_POST["lang"].'"', $file[11]);
+		$datei = fOpen($dateiname, "w+");
+		foreach ($file as $value) {
+			fwrite($datei, $value);
+		}
+		fClose($datei);
+		unset($file[0]);
+		echo '<p>created config.php</p><head><META HTTP-EQUIV=Refresh CONTENT="2; URL='.$_SERVER['PHP_SELF'].'"></head>';
 		unlink("includes/install.php");
-	} 
-	else {
+	} else {
 		echo '<form enctype="multipart/form-data" method="post" action="'.$_SERVER['PHP_SELF'].'">
 				<table align="center">
 					<tr>
@@ -74,4 +67,5 @@
 			<input type="submit" name="submitbutton" value="create config.php">
 		</form><br />* are mandatory | * sind Pflicht';
 	}
+echo '</div>';
 ?>
