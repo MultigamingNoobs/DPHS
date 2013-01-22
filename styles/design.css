@@ -25,6 +25,10 @@ td {
 img {
 	border:0;
 }
+#install p{
+	color:black;
+}
+
 
 a:link {
 	text-decoration: none;
