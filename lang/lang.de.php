@@ -28,4 +28,5 @@ $lang['LGND']				= "Legende";
 $lang['SEARCH']				= "Suche";
 $lang['SEARCH_ERROR']		= "Kein Ergebnis";
 $lang['SEARCH_BACK']		= "Zur&uuml;ck";
+$lang['ORDER']              = "Sortierung";
 ?>
