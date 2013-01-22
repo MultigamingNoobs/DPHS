@@ -18,6 +18,7 @@ Alle Versionen vor 2.0: Die alte Version löschen und 2.0 Neuinstallieren.<br>
 + Serverinformationen im header
 + Sprachsystem optimiert
 + Hintergrundbild
++ installation optimiert
 
 ### Version 1.5 ###
 + größere Anderüngen am Aufbau und der Struktur des Skripts (speziellen Dank an Crosire)
@@ -57,6 +58,7 @@ All Versions before 2.0: Delete old Version and do a fresh 2.0 install.<br>
 + Serverinfos in header
 + optimisation of language system
 + backgroundimage
++ installation optimized
 
 ### Version 1.5 ###
 + major changes to the sturcture and build of the script (special thanks to Crosire)
