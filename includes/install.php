@@ -23,8 +23,8 @@ echo '<div id="install">';
 		{ 
 		echo "Datei wurde nicht gefunden";
 		}
-		$file[2] = str_replace('DBHS', $webname, $file[2]);
-		$file[3] = str_replace('title_banner.png', $titlebanner, $file[3]);
+		$file[2] = str_replace('""', '"'.$_POST["title"].'"', $file[2]);
+		$file[3] = str_replace('""', '"'.$titlebanner.'"', $file[3]);
 		$file[4] = str_replace('""', '"'.$_POST["svrname"].'"', $file[4]);
 		$file[5] = str_replace('""', '"'.$_POST["svrip"].'"', $file[5]);
 		$file[6] = str_replace('""', '"'.$_POST["svrport"].'"', $file[6]);
