@@ -8,7 +8,7 @@ echo '<div id="install">';
 		}
 		else
 		{
-			move_uploaded_file($_FILES["banner"]["tmp_name"], "../images/".$_FILES["banner"]["name"]);
+			move_uploaded_file($_FILES["banner"]["tmp_name"], "./images/".$_FILES["banner"]["name"]);
 			$titlebanner = $_FILES["banner"]["name"];
 		}
 		$fp = fopen("includes/config.sample.php","r");
@@ -47,7 +47,7 @@ echo '<div id="install">';
 					<tr>
 						<td><p align="right">Websitetitle:</p></td><td><p align="left"><input type="text" name="title"></p></td>
 					</tr><tr>
-						<td><p align="right">Websitebanner:</p></td><td><p align="left"><input type="file" name="banner"></p></td>
+						<td><p align="right">Websitebanner:</p></td><td><p align="left"><input type="file" name="banner" accept="image/png,image/jpg,image/jpeg"></p></td>
 					</tr><tr>
 						<td><p align="right">Servername:</p></td><td><p align="left"><input type="text" name="svrname"></p></td>
 					</tr><tr>
