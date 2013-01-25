@@ -47,7 +47,7 @@ echo '<div id="install">';
 					<tr>
 						<td><p align="right">Websitetitle:</p></td><td><p align="left"><input type="text" name="title"></p></td>
 					</tr><tr>
-						<td><p align="right">Websitebanner:</p></td><td><p align="left"><input type="file" name="banner" accept="image/png,image/jpg,image/jpeg"></p></td>
+						<td><p align="right">Websitebanner:</p></td><td><p align="left"><input type="file" name="banner" accept="image/png, image/gif, image/jpg, image/jpeg"></p></td>
 					</tr><tr>
 						<td><p align="right">Servername:</p></td><td><p align="left"><input type="text" name="svrname"></p></td>
 					</tr><tr>
