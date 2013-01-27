@@ -1,7 +1,7 @@
 <?php
 	include "includes/query.php";
 	include "includes/svtime.php";
-	
+	$nr = 0;
 	echo '<font style="color: black;">'.$lang['AVGSURV'].': '.svtime($crosssurvival["avg(survival_time)"]).'</font>';
 		
 	echo '<br />
@@ -54,7 +54,7 @@
 				<td style="text-align:right;">'.$stat_bkills.'<br /><font size="1">'.$stat_tbkills.'</font></td>
 				<td style="text-align:right;">'.$stat_zkills.'<br /><font size="1">'.$stat_tzkills.'</font></td>
 				<td style="text-align:right;">'.$stat_hs.'<br /><font size="1">'.$stat_ths.'</font></td>
-				<td style="text-align:right;">'.($stat_hs == 0 ? '0' : (round(100 / ($stat_skills + $stat_bkills + $stat_zkills) * ($stat_hs), 2))).'%<br /><font size="1">'.($stat_hs == 0 ? '0' : (round(100 / ($stat_skills + $stat_tskills + $stat_bkills + $stat_tbkills + $stat_zkills + $stat_tzkills) * ($stat_hs + $stat_ths), 2))).'%</font></td>
+				<td style="text-align:right;">'.($stat_hs == 0 ? '0' : (round(100 / ($stat_kills + $stat_bkills + $stat_zkills) * ($stat_hs), 2))).'%<br /><font size="1">'.($stat_hs == 0 ? '0' : (round(100 / ($stat_kills + $stat_tkills + $stat_bkills + $stat_tbkills + $stat_zkills + $stat_tzkills) * ($stat_hs + $stat_ths), 2))).'%</font></td>
 			</tr>';
 
 			$nr++;
