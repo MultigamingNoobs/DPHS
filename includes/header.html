@@ -2,6 +2,7 @@
 	include "includes/config.php";
 	include "lang/lang.$langselect.php";
 	include "includes/vars.php";
+	include "includes/serverquery.php";
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -18,7 +19,7 @@
 		<table width="100%">
 			<tr>
 				<td><a href="." title="<?= $webname; ?>"><img src="images/<?= $titlebanner; ?>" alt="<?= $webname; ?>" border="0" /></a></td>
-				<td><?= $svr_name.'<br />'.$svr_ip.':'.$svr_port; ?></td>
+				<td><? if(isset($svrqry['s'])) { echo $svrqry['s']['name'].'<br />'.$svr_ip.':'.$svr_port; } else { echo $lang['svrqryERROR'].'<br />'.$svr_ip.':'.$svr_port; } ?></td>
 			</tr>
 		</table>
 	</div>

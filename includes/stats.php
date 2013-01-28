@@ -1,27 +1,30 @@
 <?php
 	include "includes/query.php";
 	include "includes/svtime.php";
-	$nr = 0;
+	
+	$nr = '0';
+	echo '<font style="color: black;">'.$svrqry['s']['players'].'/'.$svrqry['s']['playersmax'].' '.$lang['PLAYER'].'</font><br />';
 	echo '<font style="color: black;">'.$lang['AVGSURV'].': '.svtime($crosssurvival["avg(survival_time)"]).'</font>';
 		
 	echo '<br />
 			<table border="0" align="center">
 				<tr class="tr_1">
 					<td>#</td>
-					<td><a href="?type=name&order='.$sort.'">'.($type == "name" ? $lang['NAME'].'<img src="images/'.$order.'.png" title="'.$order_lng.'" />' : $lang['NAME'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'">').'</a></td>
-					<td><a href="?type=humanity&order='.$sort.'">'.($type == "humanity" ? $lang['HUMANITY'].'<img src="images/'.$order.'.png" title="'.$order_lng.'" />' : $lang['HUMANITY'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'">').'</a></td>
-					<td><a href="?type=life&order='.$sort.'">'.($type == "life" ? $lang['LIFE'].'<img src="images/'.$order.'.png" title="'.$order_lng.'" />' : $lang['LIFE'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'">').'</a></td>
-					<td><a href="?type=svtime&order='.$sort.'">'.($type == "svtime" ? $lang['SVTIME'].'<img src="images/'.$order.'.png" title="'.$order_lng.'" />' : $lang['SVTIME'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'">').'</a><br /><font size="1"><a href="?type=tsvtime&order='.$sort.'">'.($type == "tsvtime" ? $lang['TOTAL'].'<img src="images/'.$order.'s.png" title="'.$order_lng.'" />' : $lang['TOTAL'].'<img src="images/noorders.png" title="'.$lang['ORDER'].'">').'</a></td>
-					<td><a href="?type=kills&order='.$sort.'">'.($type == "kills" ? $lang['KILLS'].'<img src="images/'.$order.'.png" title="'.$order_lng.'" />' : $lang['KILLS'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'">').'</a><br /><font size="1"><a href="?type=tkills&order='.$sort.'">'.($type == "tkills" ? $lang['TOTAL'].'<img src="images/'.$order.'s.png" title="'.$order_lng.'" />' : $lang['TOTAL'].'<img src="images/noorders.png" title="'.$lang['ORDER'].'">').'</a></td>
-					<td><a href="?type=bkills&order='.$sort.'">'.($type == "bkills" ? $lang['BKILLS'].'<img src="images/'.$order.'.png" title="'.$order_lng.'" />' : $lang['BKILLS'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'">').'</a><br /><font size="1"><a href="?type=tbkills&order='.$sort.'">'.($type == "tbkills" ? $lang['TOTAL'].'<img src="images/'.$order.'s.png" title="'.$order_lng.'" />' : $lang['TOTAL'].'<img src="images/noorders.png" title="'.$lang['ORDER'].'">').'</a></td>
-					<td><a href="?type=zkills&order='.$sort.'">'.($type == "zkills" ? $lang['ZKILLS'].'<img src="images/'.$order.'.png" title="'.$order_lng.'" />' : $lang['ZKILLS'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'">').'</a><br /><font size="1"><a href="?type=tzkills&order='.$sort.'">'.($type == "tzkills" ? $lang['TOTAL'].'<img src="images/'.$order.'s.png" title="'.$order_lng.'" />' : $lang['TOTAL'].'<img src="images/noorders.png" title="'.$lang['ORDER'].'">').'</a></td>
-					<td><a href="?type=hs&order='.$sort.'">'.($type == "hs" ? $lang['HS'].'<img src="images/'.$order.'.png" title="'.$order_lng.'" />' : $lang['HS'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'" alt="">').'</a><br /><font size="1"><a href="?type=ths&order='.$sort.'">'.($type == "ths" ? $lang['TOTAL'].'<img src="images/'.$order.'s.png" title="'.$order_lng.'" />' : $lang['TOTAL'].'<img src="images/noorders.png" title="'.$lang['ORDER'].'">').'</a></td>
-					<td><a href="?type=hsq&order='.$sort.'">'.($type == "hsq" ? $lang['HSQ'].'<img src="images/'.$order.'.png" title="'.$order_lng.'" />' : $lang['HSQ'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'" alt="">').'</a><br /><font size="1"><a href="?type=thsq&order='.$sort.'">'.($type == "thsq" ? $lang['TOTAL'].'<img src="images/'.$order.'s.png" title="'.$order_lng.'" />' : $lang['TOTAL'].'<img src="images/noorders.png" title="'.$lang['ORDER'].'">').'</a></td>
+					<td><a href="?type=name&order='.$sort.'">'.($type == "name" ? $lang['NAME'].'<img src="images/'.$order.'.png" title="'.$lang['ORDER']   .'" />' : $lang['NAME'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'">').'</a></td>
+					<td><a href="?type=humanity&order='.$sort.'">'.($type == "humanity" ? $lang['HUMANITY'].'<img src="images/'.$order.'.png" title="'.$lang['ORDER']   .'" />' : $lang['HUMANITY'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'">').'</a></td>
+					<td><a href="?type=life&order='.$sort.'">'.($type == "life" ? $lang['LIFE'].'<img src="images/'.$order.'.png" title="'.$lang['ORDER']   .'" />' : $lang['LIFE'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'">').'</a></td>
+					<td><a href="?type=svtime&order='.$sort.'">'.($type == "svtime" ? $lang['SVTIME'].'<img src="images/'.$order.'.png" title="'.$lang['ORDER']   .'" />' : $lang['SVTIME'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'">').'</a><br /><font size="1"><a href="?type=tsvtime&order='.$sort.'">'.($type == "tsvtime" ? $lang['TOTAL'].'<img src="images/'.$order.'s.png" title="'.$lang['ORDER']   .'" />' : $lang['TOTAL'].'<img src="images/noorders.png" title="'.$lang['ORDER'].'">').'</a></td>
+					<td><a href="?type=kills&order='.$sort.'">'.($type == "kills" ? $lang['KILLS'].'<img src="images/'.$order.'.png" title="'.$lang['ORDER']   .'" />' : $lang['KILLS'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'">').'</a><br /><font size="1"><a href="?type=tkills&order='.$sort.'">'.($type == "tkills" ? $lang['TOTAL'].'<img src="images/'.$order.'s.png" title="'.$lang['ORDER']   .'" />' : $lang['TOTAL'].'<img src="images/noorders.png" title="'.$lang['ORDER'].'">').'</a></td>
+					<td><a href="?type=bkills&order='.$sort.'">'.($type == "bkills" ? $lang['BKILLS'].'<img src="images/'.$order.'.png" title="'.$lang['ORDER']   .'" />' : $lang['BKILLS'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'">').'</a><br /><font size="1"><a href="?type=tbkills&order='.$sort.'">'.($type == "tbkills" ? $lang['TOTAL'].'<img src="images/'.$order.'s.png" title="'.$lang['ORDER']   .'" />' : $lang['TOTAL'].'<img src="images/noorders.png" title="'.$lang['ORDER'].'">').'</a></td>
+					<td><a href="?type=zkills&order='.$sort.'">'.($type == "zkills" ? $lang['ZKILLS'].'<img src="images/'.$order.'.png" title="'.$lang['ORDER']   .'" />' : $lang['ZKILLS'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'">').'</a><br /><font size="1"><a href="?type=tzkills&order='.$sort.'">'.($type == "tzkills" ? $lang['TOTAL'].'<img src="images/'.$order.'s.png" title="'.$lang['ORDER']   .'" />' : $lang['TOTAL'].'<img src="images/noorders.png" title="'.$lang['ORDER'].'">').'</a></td>
+					<td><a href="?type=hs&order='.$sort.'">'.($type == "hs" ? $lang['HS'].'<img src="images/'.$order.'.png" title="'.$lang['ORDER']   .'" />' : $lang['HS'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'" alt="">').'</a><br /><font size="1"><a href="?type=ths&order='.$sort.'">'.($type == "ths" ? $lang['TOTAL'].'<img src="images/'.$order.'s.png" title="'.$lang['ORDER']   .'" />' : $lang['TOTAL'].'<img src="images/noorders.png" title="'.$lang['ORDER'].'">').'</a></td>
+					<td><a href="?type=hsq&order='.$sort.'">'.($type == "hsq" ? $lang['HSQ'].'<img src="images/'.$order.'.png" title="'.$lang['ORDER']   .'" />' : $lang['HSQ'].'<img src="images/noorder.png" title="'.$lang['ORDER'].'" alt="">').'</a><br /><font size="1"><a href="?type=thsq&order='.$sort.'">'.($type == "thsq" ? $lang['TOTAL'].'<img src="images/'.$order.'s.png" title="'.$lang['ORDER']   .'" />' : $lang['TOTAL'].'<img src="images/noorders.png" title="'.$lang['ORDER'].'">').'</a></td>
 				</tr>';
 	if (mysql_num_rows($stats) > 0) {
 		while ($row = mysql_fetch_array($stats))
 		{
 			$stat_name = $row['name'];
+			if (isset($svrqry['p'])) { $stat_on = svqonline($row['name'], $svrqry['p']); } else { $stat_on = '<img src="images/off.png" title="OFFLINE" />'; }
 			$stat_humanity = $row['humanity'];
 			$stat_life = $row['survival_attempts'] - 1;
 			$stat_svtime =  svtime($row['survival_time']);
@@ -46,7 +49,7 @@
 			echo '
 			<tr class="'.(($nr%2) == 0 ? "tr_3" : "tr_2" ).'">
 				<td>'.($nr+1).'</td>
-				<td style="text-align:left;">'.$stat_name.'</td>
+				<td style="text-align:left;">'.$stat_on.' '.$stat_name.'</td>
 				<td style="text-align:left;">'.$stat_humanity.'</td>
 				<td style="text-align:left;">'.$stat_life.'</td>
 				<td style="text-align:left;">'.$stat_svtime.'<br /><font size="1">'.$stat_tsvtime.'</font></td>

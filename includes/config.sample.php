@@ -2,7 +2,6 @@
 	if(!defined('indexloaded')){die('Direct access not premitted');}
 	$webname = "";			//Titel der Webseite || Title of the Website
 	$titlebanner = "";		//Banner für die Webseite || Website Banner
-	$svr_name = "";			//Name of your Server
 	$svr_ip = "";			//IP of your Server
 	$svr_port = "";			//Port of your Server
 	$host = "";				// MySQL Hostname

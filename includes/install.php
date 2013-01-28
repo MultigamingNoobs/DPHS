@@ -25,14 +25,13 @@ echo '<div id="install">';
 		}
 		$file[2] = str_replace('""', '"'.$_POST["title"].'"', $file[2]);
 		$file[3] = str_replace('""', '"'.$titlebanner.'"', $file[3]);
-		$file[4] = str_replace('""', '"'.$_POST["svrname"].'"', $file[4]);
-		$file[5] = str_replace('""', '"'.$_POST["svrip"].'"', $file[5]);
-		$file[6] = str_replace('""', '"'.$_POST["svrport"].'"', $file[6]);
-		$file[7] = str_replace('""', '"'.$_POST["host"].'"', $file[7]);
-		$file[8] = str_replace('""', '"'.$_POST["db"].'"', $file[8]);
-		$file[9] = str_replace('""', '"'.$_POST["user"].'"', $file[9]);
-		$file[10] = str_replace('""', '"'.$_POST["pass"].'"', $file[10]);
-		$file[11] = str_replace('""', '"'.$_POST["lang"].'"', $file[11]);
+		$file[4] = str_replace('""', '"'.$_POST["svrip"].'"', $file[4]);
+		$file[5] = str_replace('""', '"'.$_POST["svrport"].'"', $file[5]);
+		$file[6] = str_replace('""', '"'.$_POST["host"].'"', $file[6]);
+		$file[7] = str_replace('""', '"'.$_POST["db"].'"', $file[7]);
+		$file[8] = str_replace('""', '"'.$_POST["user"].'"', $file[8]);
+		$file[9] = str_replace('""', '"'.$_POST["pass"].'"', $file[9]);
+		$file[10] = str_replace('""', '"'.$_POST["lang"].'"', $file[10]);
 		$datei = fOpen($dateiname, "w+");
 		foreach ($file as $value) {
 			fwrite($datei, $value);
@@ -48,8 +47,6 @@ echo '<div id="install">';
 						<td><p align="right">Websitetitle:</p></td><td><p align="left"><input type="text" name="title"></p></td>
 					</tr><tr>
 						<td><p align="right">Websitebanner:</p></td><td><p align="left"><input type="file" name="banner" accept="image/png, image/gif, image/jpg, image/jpeg"></p></td>
-					</tr><tr>
-						<td><p align="right">Servername:</p></td><td><p align="left"><input type="text" name="svrname"></p></td>
 					</tr><tr>
 						<td><p align="right">Serverip:port:</p></td><td><p align="left"><input type="text" name="svrip">:<input type="text" name="svrport"></p></td>
 					</tr><tr>

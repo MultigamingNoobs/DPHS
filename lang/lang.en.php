@@ -29,4 +29,6 @@ $lang['SEARCH']				= "Search";
 $lang['SEARCH_ERROR']		= "No results";
 $lang['SEARCH_BACK']		= "Back";
 $lang['ORDER']              = "Order";
+$lang['PLAYER']				= "Player";
+$lang['svrqryERROR']		= "Server not found!";
 ?>

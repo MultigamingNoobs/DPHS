@@ -28,4 +28,6 @@ $lang['LGNF']				= "Legend";
 $lang['SEARCH']				= "Search";
 $lang['SEARCH_ERROR']		= "No results";
 $lang['SEARCH_BACK']		= "Back";
+$lang['PLAYER']				= "Player";
+$lang['svrqryERROR']		= "Server not found!";
 ?>

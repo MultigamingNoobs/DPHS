@@ -1,5 +1,5 @@
 <?php
-	if ($langselect == de) {
+	if ($langselect == 'de') {
 		function svtime($min) {
 				$i = sprintf('%d Tag%s %02d Std%s %02d Min%s',
 				$min / 1440,
@@ -12,7 +12,7 @@
 			return $i;
 		}
  	}
-	elseif ($langselect == en) {
+	elseif ($langselect == 'en') {
 		function svtime($min) {
 				$i = sprintf('%d day%s %02d hr%s %02d min%s',
 				$min / 1440,
