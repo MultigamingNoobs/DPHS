@@ -32,4 +32,5 @@ $lang['SEARCH_BACK']		= "Zur&uuml;ck";
 $lang['ORDER']              = "Sortierung";
 $lang['PLAYER']				= "Spieler";
 $lang['svrqryERROR']		= "Server nicht gefunden!";
+$lang['INST1']				= "config.php erstellt<br />install.php und config.sample.php gelöscht<br />Bitte warten...";
 ?>

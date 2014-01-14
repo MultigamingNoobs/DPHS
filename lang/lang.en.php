@@ -25,11 +25,12 @@ $lang['DY']					= "day";
 $lang['DY2']				= "s";
 $lang['HR']					= "hrs";
 $lang['MNT']				= "min";
-$lang['LGNG']				= "Legend";
+$lang['LGND']				= "Legend";
 $lang['SEARCH']				= "Search";
 $lang['SEARCH_ERROR']		= "No results";
 $lang['SEARCH_BACK']		= "Back";
 $lang['ORDER']              = "Order";
 $lang['PLAYER']				= "Player";
 $lang['svrqryERROR']		= "Server not found!";
+$lang['INST1']				= "created config.php<br />deleted install.php and config.sample.php<br />please wait...";
 ?>

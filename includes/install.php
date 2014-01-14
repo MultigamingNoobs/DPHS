@@ -39,7 +39,7 @@ echo '<div id="install">';
 		}
 		fClose($datei);
 		unset($file[0]);
-		echo '<p>created config.php<br />deleted install.php and config.sample.php<br />please wait...</p><head><META HTTP-EQUIV=Refresh CONTENT="2; URL='.$_SERVER['PHP_SELF'].'"></head>';
+		echo '<p>'.$lang['INST1'].'</p><head><META HTTP-EQUIV=Refresh CONTENT="2; URL='.$_SERVER['PHP_SELF'].'"></head>';
 		unlink("includes/install.php");
 		unlink("includes/config.sample.php");
 	} else {
