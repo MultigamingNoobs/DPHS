@@ -260,7 +260,7 @@ if ($hive == "C") {
 				</tr><tr>
 					<td class="tr_2" style="text-align:left;">'.$lang['HERO'].':</td><td class="tr_2"><img src="images/hero.png" title="'.$lang['HERO'].'" alt="'.$lang['HERO'].'" /></td>
 				</tr><tr>
-					<td class="tr_2" style="text-align:left;">'.$lang['INFECT'].':</td><td class="tr_2"><img src="images/infect.png" title="'.$lang['INFECT'].'" alt="'.$lang['INFECT'].'" /></td>
+					<td class="tr_3" style="text-align:left;">'.$lang['INFECT'].':</td><td class="tr_3"><img src="images/infect.png" title="'.$lang['INFECT'].'" alt="'.$lang['INFECT'].'" /></td>
 				</tr>
 			</table>
 		</div>';

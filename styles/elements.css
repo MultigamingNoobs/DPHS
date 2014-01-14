@@ -31,6 +31,13 @@
 	padding:1px;
 	font-size: small;
 }
+#glblstat {
+	position:fixed;
+	top: 180px;
+	left: 90px;
+	padding:1px;
+	font-size: small;
+}
 #srch {
 	position:fixed;
 	top: 90px;
