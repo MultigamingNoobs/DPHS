@@ -18,6 +18,7 @@ $lang['TOTAL']				= "insgesamt";
 $lang['AVGSURV']			= "durchschnittliche &Uuml;berlebenszeit";
 $lang['BANDIT']				= "Bandit";
 $lang['HERO']				= "Held";
+$lang['INFECT']				= "infiziert";
 $lang['ASC']				= "aufsteigend";
 $lang['DESC']				= "absteigend";
 $lang['DY']					= "Tag";

@@ -1,3 +1,3 @@
 <?php
-	$ver = "2.0 INDEV";
+	$ver = "1.0 INDEV";
 ?>

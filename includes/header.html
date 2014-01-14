@@ -1,5 +1,11 @@
 <?php
-	include "includes/config.php";
+	if (file_exists("includes/install.php")) {
+		include "includes/config.sample.php";	
+	}
+	else {
+		include "includes/config.php";
+		include "includes/connect.php";
+	}
 	include "lang/lang.$langselect.php";
 	include "includes/vars.php";
 	include "includes/serverquery.php";
